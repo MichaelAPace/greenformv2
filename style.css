@@ -1,5 +1,15 @@
+*, *.before, *after {
+  bo-sizing:border-box;
+}
+
 body {
   background: #4EB980;
+}
+
+form {
+  width:1000px;
+  height: 1000px;
+  margin: 0% auto;
 }
 
 .name {
@@ -13,6 +23,7 @@ body {
   border-color: #fff;
   border-style: solid;
   border-radius: 4px;
+  line-height: 20px;
 }
 
 .email {
@@ -35,13 +46,13 @@ textarea {
   border: 1px;
   border-color: #fff;
   border-style: solid;
-  width: 900px;
+  width: 1000px;
   height: 400px;
   margin: 1%;
   border-radius: 4px;
+}
 
-
-.button {
+.submit {
   border: none;
   background: #fff;
   padding: 20px 40px;
@@ -55,3 +66,21 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   }
+
+
+::-webkit-input-placeholder {
+color: rgba(225, 225, 225, 0.7);
+font-size: 20px;
+}
+:-moz-placeholder { /* Firefox 18- */
+color: rgba(225, 225, 225, 0.7);
+font-size: 20px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+color: rgba(225, 225, 225, 0.7);
+font-size: 20px;
+}
+:-ms-input-placeholder {
+color: rgba(225, 225, 225, 0.7);
+font-size: 20px;
+}
